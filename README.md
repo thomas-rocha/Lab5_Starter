@@ -1,6 +1,9 @@
 # Lab 5 - Starter
 Thomas Rocha
 
+[](https://thomas-rocha.github.io/Lab5_Starter/expose.html)
+[](https://thomas-rocha.github.io/Lab5_Starter/explore.html)
+
 ### Pt 3.1
 I would not use a unit test to test a "message" feature of an application. This is a large feature that has many aspects that would be difficult to test in a unit test. 
 
