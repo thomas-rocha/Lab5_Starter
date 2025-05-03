@@ -30,7 +30,11 @@ function init() {
     });
   }
 
+<<<<<<< HEAD
   // Ensure voices are loaded before populating
+=======
+  // Ensure voices are loaded
+>>>>>>> 3d2b1afc6712c9e03ffcad8b446ba18725fb599c
   if (typeof synth.onvoiceschanged !== 'undefined') {
     synth.onvoiceschanged = populateVoiceList;
   }
@@ -45,7 +49,11 @@ function init() {
 
     const utterThis = new SpeechSynthesisUtterance(text);
 
+<<<<<<< HEAD
     // Setup image change events
+=======
+    // Setup image change events FIRST
+>>>>>>> 3d2b1afc6712c9e03ffcad8b446ba18725fb599c
     utterThis.onstart = () => {
       image.src = 'assets/images/smiling-open.png';
     };
@@ -53,7 +61,11 @@ function init() {
       image.src = 'assets/images/smiling.png';
     };
 
+<<<<<<< HEAD
     // Assign voice after setting events
+=======
+    // Assign voice AFTER setting events
+>>>>>>> 3d2b1afc6712c9e03ffcad8b446ba18725fb599c
     const selectedName = voiceSelection.selectedOptions[0].getAttribute('data-name');
     const voice = voices.find(v => v.name === selectedName);
     if (voice) {
@@ -63,4 +75,8 @@ function init() {
     synth.cancel(); // Stop any existing speech
     synth.speak(utterThis);
   });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3d2b1afc6712c9e03ffcad8b446ba18725fb599c
